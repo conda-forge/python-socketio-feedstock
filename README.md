@@ -1,7 +1,7 @@
 About python-socketio
 =====================
 
-Home: http://github.com/miguelgrinberg/python-socketio/
+Home: https://github.com/miguelgrinberg/python-socketio/
 
 Package license: MIT
 
