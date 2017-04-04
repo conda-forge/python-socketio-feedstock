@@ -1,9 +1,9 @@
 {%set name = "python-socketio" %}
-{%set version = "1.7.2" %}
+{%set version = "1.7.4" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "aa612e5d2901c94946c3004b0e58bb9fb08b214afee59ce4aeafcf8df4deb79a" %}
-{%set build_num = "0" %}
+{%set hash = "9200ee48aec8673027fdc40b0391aa2d681ff994d93b738ebd9f0d29916f24c4" %}
+{%set build = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -12,10 +12,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build_num }}
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -26,7 +26,7 @@ requirements:
   run:
     - python
     - six >=1.9.0
-    - python-engineio >=1.0.0
+    - python-engineio >=1.2.0
 
 test:
   imports:
@@ -41,13 +41,13 @@ test:
     - socketio.server
 
 about:
-  home: http://github.com/miguelgrinberg/python-socketio/
-  license: MIT
+  home: https://github.com/miguelgrinberg/python-socketio/
   license_file: LICENSE
+  license: MIT
   license_family: MIT
   summary: 'Socket.IO server'
-  doc_url: https://python-socketio.readthedocs.io
-  dev_url: http://github.com/miguelgrinberg/python-socketio/
+  doc_url: https://python-socketio.readthedocs.io/
+  dev_url: https://github.com/miguelgrinberg/python-socketio/
 
 
 extra:
