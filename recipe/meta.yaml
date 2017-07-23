@@ -1,17 +1,17 @@
-{%set name = "python-socketio" %}
-{%set version = "1.7.7" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash = "b56341ff2deead2114fd4fab58dd990b016bb685b2a3975d6304ce74e11c6375" %}
-{%set build = 0 %}
+{% set name = "python-socketio" %}
+{% set version = "1.7.7" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "b56341ff2deead2114fd4fab58dd990b016bb685b2a3975d6304ce74e11c6375" %}
+{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
