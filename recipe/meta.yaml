@@ -1,8 +1,8 @@
 {% set name = "python-socketio" %}
-{% set version = "1.8.4" %}
+{% set version = "1.9.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "13807ce17e85371d15b31295a43b1fac1c0dba1eb5fc233353a3efd53aa122cc" %}
+{% set hash = "71feb10a1b7b410d8f86bbcb0f589c75a32504a01259ed89aa1d7d5dae9190cc" %}
 {% set build = 0 %}
 
 package:
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
