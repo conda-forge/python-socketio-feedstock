@@ -14,12 +14,15 @@ Summary: Socket.IO server
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/python-socketio-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-socketio-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/python-socketio-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/python-socketio-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-socketio/badges/version.svg)](https://anaconda.org/conda-forge/python-socketio)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-socketio/badges/downloads.svg)](https://anaconda.org/conda-forge/python-socketio)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--socketio-green.svg)](https://anaconda.org/conda-forge/python-socketio) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-socketio.svg)](https://anaconda.org/conda-forge/python-socketio) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-socketio.svg)](https://anaconda.org/conda-forge/python-socketio) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-socketio.svg)](https://anaconda.org/conda-forge/python-socketio) |
 
 Installing python-socketio
 ==========================
