@@ -1,8 +1,8 @@
 {% set name = "python-socketio" %}
-{% set version = "4.0.1" %}
+{% set version = "4.1.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "8035604105058195dfa1c8ca1aff0435f08bbbdc3f72bb1f4b81723d129a4ecf" %}
+{% set hash = "c7ffeac3d81f2d8d63b3ec7ed1e2d4478cc84aa1da666c1934c19432f4b8c0f8" %}
 {% set build = 0 %}
 
 package:
