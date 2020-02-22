@@ -1,8 +1,8 @@
 {% set name = "python-socketio" %}
-{% set version = "4.3.0" %}
+{% set version = "4.4.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "f7760eb02a1058e7d0975bba4b5313f29c8ed75dbe56b68d26ea18bcd371cdd6" %}
+{% set hash = "48cba5b827ac665dbf923a4f5ec590812aed5299a831fc43576a9af346272534" %}
 {% set build = 0 %}
 
 package:
@@ -27,7 +27,7 @@ requirements:
   run:
     - python
     - six >=1.9.0
-    - python-engineio >=1.2.1
+    - python-engineio >=3.9.0
 
 test:
   imports:
