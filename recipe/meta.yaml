@@ -1,35 +1,32 @@
-{% set name = "python-socketio" %}
 {% set version = "4.4.0" %}
-{% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "48cba5b827ac665dbf923a4f5ec590812aed5299a831fc43576a9af346272534" %}
-{% set build = 0 %}
 
 package:
-  name: {{ name|lower }}
+  name: python-socketio
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash }}
+  url: https://pypi.io/packages/source/p/python-socketio/python-socketio-{{ version }}.tar.gz
+  sha256: 48cba5b827ac665dbf923a4f5ec590812aed5299a831fc43576a9af346272534
 
 build:
-  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - python
-    - setuptools
-
+    - pip
   run:
     - python
     - six >=1.9.0
     - python-engineio >=3.9.0
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - socketio
     - socketio.base_manager
