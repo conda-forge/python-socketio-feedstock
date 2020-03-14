@@ -1,4 +1,4 @@
-{% set version = "4.4.0" %}
+{% set version = "4.5.0" %}
 
 package:
   name: python-socketio
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-socketio/python-socketio-{{ version }}.tar.gz
-  sha256: 48cba5b827ac665dbf923a4f5ec590812aed5299a831fc43576a9af346272534
+  sha256: 728c0140c4456bafac241eea04752e7a4a6f91a18c15ad553bf6a51bcd4e1ed7
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -43,7 +43,7 @@ about:
   license_file: LICENSE
   license: MIT
   license_family: MIT
-  summary: 'Socket.IO server'
+  summary: Socket.IO server
   doc_url: https://python-socketio.readthedocs.io/
   dev_url: https://github.com/miguelgrinberg/python-socketio/
 
