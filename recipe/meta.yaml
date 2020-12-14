@@ -19,8 +19,8 @@ requirements:
     - pip
   run:
     - python >=2.7
-    - six >=1.9.0
-    - python-engineio >=3.13.0,<4
+    - bidict >=0.21.0
+    - python-engineio >=4.0.0
 
 test:
   requires:
