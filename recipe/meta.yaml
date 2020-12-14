@@ -1,4 +1,4 @@
-{% set version = "4.5.1" %}
+{% set version = "4.6.0" %}
 
 package:
   name: python-socketio
@@ -6,21 +6,21 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-socketio/python-socketio-{{ version }}.tar.gz
-  sha256: 149b98c33f8c3d09273fb4ebeb83781e4dc9411b56b27d9f058bec1bd1ed74b7
+  sha256: 358d8fbbc029c4538ea25bcaa283e47f375be0017fcba829de8a3a731c9df25a
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python
+    - python >=2.7
     - pip
   run:
-    - python
+    - python >=2.7
     - six >=1.9.0
-    - python-engineio >=3.9.0
+    - python-engineio >=3.13.0
 
 test:
   requires:
@@ -52,3 +52,4 @@ extra:
   recipe-maintainers:
     - pmlandwehr
     - ReimarBauer
+    - synapticarbors
