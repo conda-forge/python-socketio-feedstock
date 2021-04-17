@@ -20,7 +20,7 @@ requirements:
   run:
     - python >=2.7
     - bidict >=0.21.0
-    - python-engineio >=4.0.0
+    - python-engineio >=4.1.0
 
 test:
   requires:
