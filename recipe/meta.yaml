@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python >=2.7
+    - python >=3.5
     - pip
   run:
-    - python >=2.7
+    - python >=3.5
     - bidict >=0.21.0
     - python-engineio >=4.1.0
 
