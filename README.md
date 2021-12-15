@@ -121,6 +121,5 @@ Feedstock Maintainers
 =====================
 
 * [@ReimarBauer](https://github.com/ReimarBauer/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@synapticarbors](https://github.com/synapticarbors/)
 
