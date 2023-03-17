@@ -1,11 +1,11 @@
-About python-socketio
-=====================
+About python-socketio-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-socketio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/miguelgrinberg/python-socketio/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-socketio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Socket.IO server
 
