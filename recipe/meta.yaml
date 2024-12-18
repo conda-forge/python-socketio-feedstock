@@ -5,27 +5,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/python-socketio/python_socketio-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/python-socketio/python_socketio-{{ version }}.tar.gz
   sha256: 8b0b8ff2964b2957c865835e936310190639c00310a47d77321a594d1665355e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools >=61.2
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - bidict >=0.21.0
     - python-engineio >=4.8.0
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
   imports:
