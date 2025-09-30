@@ -1,4 +1,4 @@
-{% set version = "5.13.0" %}
+{% set version = "5.14.0" %}
 
 package:
   name: python-socketio
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-socketio/python_socketio-{{ version }}.tar.gz
-  sha256: ac4e19a0302ae812e23b712ec8b6427ca0521f7c582d6abb096e36e24a263029
+  sha256: d057737f658b3948392ff452a5c865c5ccc969859c37cf095a73393ce755f98e
 
 build:
   number: 0
