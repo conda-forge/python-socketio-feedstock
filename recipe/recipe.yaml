@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "5.14.1"
+  version: "5.14.2"
 
 package:
   name: python-socketio
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-socketio/python_socketio-${{ version }}.tar.gz
-  sha256: bf49657073b90ee09e4cbd6651044b46bb526694276621e807a1b8fcc0c1b25b
+  sha256: 5da35caa04059048a4521b1378340a33a15439c6a748765046112fa0d145fb1b
 
 build:
   number: 0
