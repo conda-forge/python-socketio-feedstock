@@ -44,31 +44,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `python-socketio` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install python-socketio
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install python-socketio
 ```
 
-It is possible to list all of the versions of `python-socketio` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add python-socketio
+# for installing globally
+pixi global install python-socketio
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `python-socketio` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search python-socketio --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search python-socketio --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search python-socketio --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -80,6 +122,8 @@ mamba repoquery whoneeds python-socketio --channel conda-forge
 # List dependencies of `python-socketio`:
 mamba repoquery depends python-socketio --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
