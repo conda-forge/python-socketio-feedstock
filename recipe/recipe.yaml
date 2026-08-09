@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "5.16.3"
+  version: "5.16.4"
 
 package:
   name: python-socketio
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-socketio/python_socketio-${{ version }}.tar.gz
-  sha256: 89b136f677ae65607a84cecda9b4d6c5377b40a97582c504c25df89af16d520e
+  sha256: f7fa4a43cc8e687930b5c6e44d6e2efc2071eca4bef49b8bb3dc0827f7f92235
 
 build:
   number: 0
@@ -38,7 +38,9 @@ tests:
         - socketio.redis_manager
         - socketio.server
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version: 
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   license_file: LICENSE
