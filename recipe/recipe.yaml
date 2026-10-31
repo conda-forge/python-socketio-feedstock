@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "5.17.0"
+  version: 5.17.1
 
 package:
   name: python-socketio
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/python-socketio/python_socketio-${{ version }}.tar.gz
-  sha256: c3bbfc4937dcfea7c4d1b182afa94d4a30335d153987e8f2078b344beacf95a0
+  sha256: 2a3183d7172e5ff772b9c24ef94f1fdf84a09b746925c997b7687ae8017f7247
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - bidict >=0.21.0
-    - python-engineio >=4.13.2
+    - python-engineio >=4.15.1
 tests:
   - python:
       imports:
@@ -40,7 +40,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
 
 about:
   license_file: LICENSE
